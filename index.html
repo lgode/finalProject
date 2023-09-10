@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1 class="title">THE PLANETS</h1>
+        <nav id="navEl">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Mercury</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Venus</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Earth</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mars</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Jupiter</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Saturn</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Uranus</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Neptune</a></li>
+          </ul>
+        </nav>
+        <button id="burger-menu" class="burger-menu">
+          <img src="assets/images/icon-burger.svg" alt="burger-button" />
+        </button>
+      </div>
+      <hr class="top-line" />
+    </header>
+    <div class="subheader">
+      <div class="subheader-container">
+        <div class="option option-active">
+          <h1>OVERVIEW</h1>
+          <div class="rectangle"></div>
+        </div>
+        <div class="option">
+          <h1>STRUCTURE</h1>
+          <div class="rectangle"></div>
+        </div>
+        <div class="option">
+          <h1>SURFACE</h1>
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <hr class="top-line" />
+    </div>
+    <div id="main" class="main active">
+      <img src="" alt="planet image" class="planet-img" id="planet-img" />
+      <img
+        src=""
+        alt="planet surface"
+        class="planet-img-second img-active"
+        id="planet-img-second"
+      />
+      <div class="planet-text-and-info">
+        <div class="planet-text">
+          <div class="planet-name" id="planet-name"></div>
+          <div class="planet-info" id="planet-info"></div>
+          <div class="planet-source">
+            Source: <a id="planet-source" href="" target="_blank">Wikipedia</a>
+          </div>
+        </div>
+        <div class="head-info">
+          <div class="text-box text-box-active">
+            <div class="number">01</div>
+            <div class="text-box-text">OVERVIEW</div>
+          </div>
+          <div class="text-box">
+            <div class="number">02</div>
+            <div class="text-box-text">INTERNAL STRUCTURE</div>
+          </div>
+          <div class="text-box">
+            <div class="number">03</div>
+            <div class="text-box-text">SURFACE GEOLOGY</div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info-container">
+          <div class="info-text">Rotation time</div>
+          <div class="info-number"></div>
+        </div>
+        <div class="info-container">
+          <div class="info-text">Revolution time</div>
+          <div class="info-number"></div>
+        </div>
+        <div class="info-container">
+          <div class="info-text">Radius</div>
+          <div class="info-number"></div>
+        </div>
+        <div class="info-container">
+          <div class="info-text">Average temp.</div>
+          <div class="info-number"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+@font-face {
+  font-family: Antonio;
+  src: url("/assets/fonts/antonio.woff2");
+}
+
+@font-face {
+  font-family: League-Spartan-Regular;
+  src: url("/assets/fonts/league-spartan-v11-latin-regular.woff2");
+}
+
+@font-face {
+  font-family: League-Spartan-Bold;
+  src: url("/assets/fonts/league-spartan-v11-latin-700.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+body {
+  background-color: #070724;
+  background-image: url(/assets/images/background-stars.svg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.header-container {
+  height: 6.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: Antonio;
+  font-size: 2.8rem;
+  letter-spacing: -1.05px;
+  color: #fff;
+  margin-left: 2.4rem;
+  font-weight: normal;
+}
+
+.burger-menu {
+  /* width: 20px;
+  color: #fff; */
+  margin-right: 2.8rem;
+}
+
+.burger-menu button {
+  margin-top: 0.5rem;
+}
+
+.top-line {
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.subheader-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 5.6rem;
+}
+
+.subheader-container .option {
+  margin: 2.4rem 2rem 0;
+  cursor: pointer;
+}
+
+.subheader-container .option h1 {
+  font-size: 1.2rem;
+  font-family: League-Spartan-Bold;
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.option-active .rectangle {
+  background-color: #fff;
+}
+
+.rectangle {
+  width: 80px;
+  height: 4px;
+  margin-top: 17px;
+}
+
+.main {
+  display: none;
+}
+
+.main.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planet-img {
+  width: 111px;
+  height: 111px;
+  margin: 95px;
+}
+
+.planet-img-second {
+  display: none;
+  width: 80px;
+  height: 90px;
+  margin-top: -90px;
+}
+
+.img-active {
+  display: block;
+}
+
+.planet-name {
+  font-family: Antonio;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.planet-info {
+  margin: 16px 24px 32px;
+  text-align: center;
+  font-family: League-Spartan-Regular;
+  font-style: normal;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.planet-source {
+  color: #fff;
+  opacity: 0.5;
+  font-family: League-Spartan-Regular;
+  font-size: 13px;
+  font-style: normal;
+  mix-blend-mode: normal;
+  text-align: center;
+}
+
+.planet-source a,
+.planet-source a:hover,
+.planet-source a:visited,
+.planet-source a:focus,
+.planet-source a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: auto;
+}
+
+.planet-source a {
+  text-decoration: underline;
+  cursor: pointer !important;
+}
+.head-info {
+  display: none;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px 24px 48px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  border: 1px solid #ffffff;
+  color: #fff;
+}
+
+.info-text {
+  opacity: 0.5;
+  font-family: League-Spartan-Bold;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 24px;
+  letter-spacing: 0.727273px;
+}
+
+.info-number {
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.75px;
+  margin-right: 24px;
+}
+
+nav {
+  display: none;
+}
+
+nav.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  padding-top: 44px;
+  background-color: #070724;
+}

@@ -1,0 +1,115 @@
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    height: 14.1rem;
+  }
+  .nav-container {
+    height: 8.9rem;
+  }
+  .nav-container .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+  .burger-button {
+    display: none;
+  }
+  .subheader-container {
+    display: none;
+  }
+  .title {
+    margin-top: 1.6rem;
+    margin-left: 2.4rem;
+  }
+  .nav-link {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: League-Spartan-Regular, sans-serif;
+  }
+  .planet-text-and-info {
+    display: flex;
+    margin-left: 39px;
+  }
+  .planet-text {
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .planet-info {
+    margin-left: 0;
+    text-align: start;
+  }
+  .planet-img {
+    width: 270px;
+    height: 270px;
+  }
+  .head-info {
+    display: block;
+  }
+  .text-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 281px;
+    height: 40px;
+    display: flex;
+    margin: 2.4rem 2rem 0;
+  }
+  .number {
+    opacity: 0.5;
+    font-family: League-Spartan-Bold;
+    font-weight: 700;
+    margin-right: 1.7rem;
+    margin-left: 2rem;
+    letter-spacing: 1.92857px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text-box-text {
+    opacity: 1;
+    text-align: left;
+    font-family: League-Spartan-Bold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 22px;
+    padding: 28px 24px 48px;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    height: 88px;
+    width: 164px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  .info-text {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .info-number {
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+  }
+}
