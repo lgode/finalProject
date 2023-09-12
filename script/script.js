@@ -12,6 +12,34 @@ const burgerButton = document.getElementById("burger-menu");
 const navElement = document.getElementById("navEl");
 const mainEl = document.getElementById("main");
 
+const navLinks = document.getElementsByClassName("nav-link");
+
+const menuItems = document.getElementsByClassName("menu-items");
+const textBox = document.getElementsByClassName("text-box");
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", () => {
+    getPlanet(navLinks[i].textContent.trim());
+    navElement.classList.toggle("active");
+    mainEl.classList.toggle("active");
+    toggleBurger();
+    console.log(navLinks[i].textContent.trim());
+  });
+}
+
+for (let i = 0; i < menuItems.length; i++) {
+  menuItems[i].addEventListener("click", () => {
+    getPlanet(menuItems[i].textContent.trim());
+    console.log(menuItems[i].textContent.trim());
+  });
+}
+
+burgerButton.addEventListener("click", () => {
+  navElement.classList.toggle("active");
+  mainEl.classList.toggle("active");
+  toggleBurger();
+});
+
 const getPlanet = async (planet = "Mercury") => {
   const response = await fetch(
     `https://planets-api.vercel.app/api/v1/planets/${planet}`
@@ -25,7 +53,11 @@ const getPlanet = async (planet = "Mercury") => {
     });
   }
 
-  // console.log(document.querySelector('.option-active > .rectangle'));
+  for (let i = 0; i < textBox.length; i++) {
+    textBox[i].addEventListener("click", () => {
+      getSubheader(textBox[i].textContent);
+    });
+  }
 
   planetName.textContent = data.name;
   planetImage.src = data.images.planet;
@@ -62,16 +94,17 @@ const getPlanet = async (planet = "Mercury") => {
   infoNumber[1].textContent = data.revolution;
   infoNumber[2].textContent = data.radius;
   infoNumber[3].textContent = data.temperature;
-
-  console.log(burgerButton.children);
-
-  burgerButton.addEventListener("click", () => {
-    navElement.classList.toggle("active");
-    mainEl.classList.toggle("active");
-    if (navElement.classList.contains("active")) {
-      // burgerButton.children[0].src = "../assets/images/close.svg";
-    }
-  });
 };
 
 getPlanet();
+
+const toggleBurger = () => {
+  if (navElement.classList.contains("active")) {
+    burgerButton.children[0].src = "/assets/images/close.svg";
+    burgerButton.children[0].style.width = "24px";
+    burgerButton.children[0].style.filter = "invert(1)";
+  } else {
+    burgerButton.children[0].src = "/assets/images/icon-burger.svg";
+    burgerButton.children[0].style.filter = "invert(0)";
+  }
+};

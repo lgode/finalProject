@@ -73,7 +73,7 @@ a {
   margin-right: 2.8rem;
 }
 
-.burger-menu button {
+.burger-menu {
   margin-top: 0.5rem;
 }
 
@@ -121,6 +121,9 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.head-menu {
+  display: none;
+}
 
 .planet-img {
   width: 111px;
@@ -130,9 +133,12 @@ a {
 
 .planet-img-second {
   display: none;
+  position: absolute;
   width: 80px;
   height: 90px;
-  margin-top: -90px;
+  top: 300px;
+  /* margin-top: -150px; */
+  margin-left: 25px;
 }
 
 .img-active {
@@ -239,4 +245,63 @@ nav.active {
   top: 70px;
   padding-top: 44px;
   background-color: #070724;
+}
+
+.circle {
+  /* background-color: #fff; */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-bottom: 23px;
+  margin-left: 24px;
+}
+
+.nav-link {
+  display: flex;
+}
+
+.nav-planet-name {
+  margin-left: 24px;
+  margin-top: 2px;
+  color: #fff;
+  font-family: League-Spartan-Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.nav-line {
+  margin-bottom: 22px;
+  margin-left: 24px;
+  margin-right: 24px;
+  background-color: #fff;
+  opacity: 0.2;
+}
+.nav-link .circle-1 {
+  background-color: #419ebb;
+}
+.nav-link .circle-2 {
+  background-color: rgb(247, 204, 127);
+}
+.nav-link .circle-3 {
+  background-color: rgb(84, 91, 254);
+}
+.nav-link .circle-4 {
+  background-color: rgb(255, 106, 69);
+}
+.nav-link .circle-5 {
+  background-color: rgb(236, 173, 122);
+}
+.nav-link .circle-6 {
+  background-color: rgb(252, 203, 107);
+}
+.nav-link .circle-7 {
+  background-color: rgb(101, 240, 213);
+}
+.nav-link .circle-8 {
+  background-color: rgb(73, 126, 250);
 }
