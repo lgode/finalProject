@@ -137,7 +137,39 @@
   }
   .main.active {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 126px;
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+  .planet-info {
+    width: 350px;
+  }
+  .planet-text-and-info {
     flex-direction: column;
-    align-items: center;
+  }
+  .planet-name {
+    font-size: 80px;
+  }
+  .text-box {
+    margin-left: 0;
+    margin-right: 0;
+    width: 350px;
+  }
+  .info {
+    margin-top: 55px;
+  }
+  .info-container {
+    height: 128px;
+    width: 255px;
+  }
+  .info-number {
+    font-size: 40px;
+  }
+  .info-text {
+    font-size: 11px;
   }
 }
